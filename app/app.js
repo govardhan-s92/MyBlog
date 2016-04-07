@@ -48,14 +48,3 @@ app.directive('foot', function () {
         }]
     }
 });
-// app.directive('foot', function () {
-//     return {
-//         restrict: 'E',// foot will used as an attribute for footer
-//         replace: true,
-//         templateUrl: "./app/partials/footer.html",
-//         controller: ['$scope', '$filter', function ($scope, $filter) {
-//             // Your behaviour goes here :)
-//         }]
-//     }
-// });
-
