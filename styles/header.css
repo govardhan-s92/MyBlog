@@ -1,0 +1,95 @@
+header {
+    width: 100%;
+    height: auto;
+}
+
+.preHeader {
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+    text-indent: 11px;
+    height: 40px;
+}
+
+.preHeader ul li span {
+    color: #FAB702;
+    font-weight: bold;
+}
+
+ul.nav.nav-pills {
+    float: right;
+}
+
+.navbar-header {
+    clear: both;
+}
+
+.navbar-default {
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid grey;
+}
+.navbar-default .navbar-nav>li>a {
+    color:#fff;
+}
+.nav.navbar-nav a {
+    display: inline-block;
+    padding: 15px 0px 15px 20px;
+    line-height: 35px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    outline: none;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #FAB702;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #FAB702;
+}
+
+.nav.navbar-nav li {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    float: left;
+    display: inline;
+    list-style: none;
+    position: relative;
+}
+
+.nav.navbar-nav li a:after, .preHeader > ul > li:nth-child(1):after{
+    float: right;
+    position: relative;
+    font-family: "FontAwesome";
+    content: "•";
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 0px;
+    color: #FAB702;
+}
+.nav.navbar-nav li:last-child{
+    padding-right: 20px;
+}
+
+.nav.navbar-nav li:last-child a:after{
+    content: '';
+}
+
+.nav.navbar-nav li ul {
+    width: 201px;
+    height: auto;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    z-index: 10;
+    display: none;
+}
+.social-icons {
+    display: inline-block;
+    margin-left: 10px;
+}
