@@ -1,11 +1,5 @@
 app.controller('addStudentCtrl',function($scope){
-  
-    $( "#accordion" ).accordion({
-      event: "click hoverintent",
-      heightStyle: "content"
-    });
- 
-  /*
+    /*
    * hoverIntent | Copyright 2011 Brian Cherne
    * http://cherne.net/brian/resources/jquery.hoverIntent.html
    * modified by the jQuery UI team

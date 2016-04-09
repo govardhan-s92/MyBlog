@@ -1,5 +1,12 @@
-"use strict"
-var app = angular.module('app',['ngRoute'])
+"use strict";
+var app = angular.module('schoolApp',['ngRoute'])
+		.run(function ($rootScope,$timeout) {
+	        $rootScope.$on('$viewContentLoaded', ()=> {
+	          $timeout(() => {
+	            componentHandler.upgradeAllRegistered();
+	          })
+	        })
+    	})
 		.config(function($routeProvider) {
 	        $routeProvider
 
@@ -34,7 +41,9 @@ app.directive('head', function () {
         replace: true,
         templateUrl: "./app/partials/header.html",
         controller: ['$scope', '$filter', function ($scope, $filter) {
-             
+            $scope.toggleSidenav = function(menuId) {
+        	$mdSidenav(menuId).toggle();
+    		}
         }]
     }
 });
